@@ -11,6 +11,7 @@ SO THAT I can plan a trip accordingly
 
 # Screenshot 
 
+<img width="1238" alt="Screen Shot 2020-05-17 at 1 32 15 PM" src="https://user-images.githubusercontent.com/56641651/82155457-1aea1280-9843-11ea-88e6-d2691763e17c.png">
 
 # Acceptance Criteria 
 The weather dashboard fulfils the below criteria: 
