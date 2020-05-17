@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Real-time Weather Dashboard
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body background = "img/paradisebg.webp">
+
+        <div class="header text-center">
+            <h1 id="mainTitle">Weather Dashboard</h1>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 p-3 mb-2 bg-light text-dark rounded flex-sm-column" id="citySearchBar">
+                    <nav>
+                        <input type="text" id="cityInfo" placeholder="Enter City" value="toronto">
+                        <button type="button" onclick="currentCityCall()" id="citySearch" class="btn btn-primary">Search</button>
+                    
+                        <div id="pastCities"></div>
+                            <ul class="list-group list-group-flush">
+                                <il class="list-group-item">Islamabad</il>
+                                <il class="list-group-item">Peshawar</il>
+                                <il class="list-group-item">Lahore DC</il>
+                                <il class="list-group-item">Toronto</il>
+                                <il class="list-group-item">Washington DC</il>
+                                <il class="list-group-item">Vancouver</il>
+                                <il class="list-group-item">New York</il>
+                            </ul>
+                        </div>
+                    </nav>
+            
+                <div class="col-8 container-fluid">
+                    <div class="container-fluid border border-secondary">
+                        <h2 id="cityName"></h2>
+                        <h2 id="date"></h3>
+                        <img id="curIcon">
+                    
+                        <p id="temp"></p>
+                        <p id="windSpeed"></p>
+                        <p id="humidity"></p>
+                        <p id="UV"></p> 
+                    </div>
+             
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2>5-Day Forecast</h2>
+                            <div class="row" id="Forecastblock"></div>
+                        </div>        
+                    </div>  
+                </div> 
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="script.js"></script>
+
+
+    </body>
+
+</html>
